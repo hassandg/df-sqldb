@@ -40,6 +40,24 @@ class PgSqlDbConfig extends SqlDbConfig
             'description' => 'Enable SSL mode for this connection.'
         ];
         $defaults[] = [
+            'name'        => 'sslrootcert',
+            'label'       => 'SSL root cert',
+            'type'        => 'string',
+            'description' => 'Provide ssl root cert file path'
+        ];
+        $defaults[] = [
+            'name'        => 'sslcert',
+            'label'       => 'SSL cert',
+            'type'        => 'string',
+            'description' => 'Provide ssl cert file path'
+        ];
+        $defaults[] = [
+            'name'        => 'sslkey',
+            'label'       => 'SSL key',
+            'type'        => 'string',
+            'description' => 'Provide ssl key file path'
+        ];
+        $defaults[] = [
             'name'        => 'timezone',
             'label'       => 'Timezone',
             'type'        => 'string',
